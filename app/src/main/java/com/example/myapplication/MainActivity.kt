@@ -18,3 +18,21 @@ class MainActivity : AppCompatActivity() {
         binding.tvJudul.text = "Profil Developer Mobile - Praktikum Pengembangan Aplikasi Perangkat Bergerak"
     }
 }
+
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+// dibawah ini adalah preview
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    MyApplicationTheme {
+        Greeting("Android")
+    }
+}
